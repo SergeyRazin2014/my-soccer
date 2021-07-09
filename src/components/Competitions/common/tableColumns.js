@@ -1,13 +1,11 @@
 import { NavLink } from 'react-router-dom';
+import { urls } from '../../../api/urls';
 
 export const culumns = [ // Название колонок в таблице
     {
         title: "Название соревнования",
         dataIndex: "nameCompetition",
         key: "nameCompetition",
-        render: (text, item) => {
-            return <NavLink to={`competition/${item.id}`} >{text}</NavLink>
-        }
     },
     {
         title: "Место проведения",
@@ -28,6 +26,6 @@ export const culumns = [ // Название колонок в таблице
     {
         title: "Конец сезона",
         dataIndex: "endDate",
-        key: "andDate",
+        key: "endDate",
     },
 ];

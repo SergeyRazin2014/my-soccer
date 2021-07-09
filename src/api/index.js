@@ -12,11 +12,17 @@ const axiosInstance = axios.create({
 
 // список соревнований
 export const getCompetitions = () => {
-    return axiosInstance.get(urls.competitions).then(response => {
+    return axiosInstance.get(urls.competitions()).then(response => {
         return response.data;
     })
 }
 
+// список команд
+export const getTeams = () => {
+    return axiosInstance.get(urls.teams()).then(response => {
+        return response.data;
+    });
+}
 
 
 

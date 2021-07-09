@@ -1,3 +1,4 @@
 export const urls = {
-    competitions: '/competitions/'
+    competitions: () => '/competitions/',
+    teams: () => '/teams/'
 }
