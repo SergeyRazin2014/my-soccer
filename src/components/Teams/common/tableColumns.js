@@ -6,12 +6,13 @@ export const culumns = [ // Название колонок в таблице
         title: "",
         dataIndex: "crestUrl",
         key: "crestUrl",
-        render: (text, item) => <img style={{maxWidth: '100px'}} src={item.crestUrl} alt='img' />
+        render: (text, item) => <img style={{ maxWidth: '100px' }} src={item.crestUrl} alt='img' />
     },
     {
         title: "Название команды",
         dataIndex: "name",
         key: "name",
+        render: (text, item) => <NavLink to={`/teams/${item.id}/matches`}>{text}</NavLink>
     },
 
     {

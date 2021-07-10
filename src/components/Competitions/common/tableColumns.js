@@ -3,9 +3,10 @@ import { urls } from '../../../api/urls';
 
 export const culumns = [ // Название колонок в таблице
     {
-        title: "Название соревнования",
+        title: "Чемпионат",
         dataIndex: "nameCompetition",
         key: "nameCompetition",
+        render: (text, item) => <NavLink to={`/competitions/${item.id}/matches`}>{text}</NavLink>
     },
     {
         title: "Место проведения",

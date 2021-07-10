@@ -11,7 +11,6 @@ export const Teams = () => {
 
     useEffect(() => {
         getTeams().then(data => {
-            debugger;
             setTeams(getDataSource(data.teams));
             setLoaded(true);
         })
